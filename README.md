@@ -1,3 +1,3 @@
 # slidingPuzzle
 
-https://sockshead.github.io/slidingPuzzle/. 
+https://sockshead.github.io/slidingPuzzle/

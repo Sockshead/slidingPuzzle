@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>F1 Sliding Puzzle</title>
+		<meta author="Juan Camilo Posada - https://github.com/Sockshead" />
+		<meta
+			name="keywords"
+			content="Juan Camilo Posada, game, slide puzzle, puzzle, js, javascript, html, html5, css, repository, git, github"
+		/>
+		<meta name="description" content="Juan's Sliding Puzzle game para desarrollo web con React 2020-2" />
+		<link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+        <link rel="icon" href="./assets/Mercedes_Icon_01.png">
+	</head>
+
+    <body onload="setUp()">
+        <img id='logo' src='./assets/Mercedes_Icon_01.png'>
+		<div class="container">
+            <h1 class="title">Mercedes AMG Petronas Formula 1 Sliding Puzzle</h1>
+			<ul>
+				<li onclick="move('p1')"></li>
+				<li onclick="move('p2')"></li>
+				<li onclick="move('p3')"></li>
+				<li onclick="move('p4')"></li>
+				<li onclick="move('p5')"></li>
+				<li onclick="move('p6')"></li>
+				<li onclick="move('p7')"></li>
+				<li onclick="move('p8')"></li>
+				<li onclick="move('p9')"></li>
+            </ul>
+            <button id='restartBtn' onclick="restart()">Restart!</button>
+		</div>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>

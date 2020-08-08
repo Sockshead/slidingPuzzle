@@ -12,14 +12,19 @@
 		/>
 		<meta name="description" content="Juan's Sliding Puzzle game para desarrollo web con React 2020-2" />
 		<link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
-        <link rel="icon" href="./assets/Mercedes_Icon_01.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+		<link rel="icon" href="./assets/Mercedes_Icon_01.png" />
+		<script>
+			console.log(
+				"Sliding Puzzle game made in pure JS, HTML & CSS by Juan Camilo Posada - https://github.com/Sockshead \n inspired by the Formula 1 racing team Mercedes AMG Petronas"
+			);
+		</script>
 	</head>
 
-    <body onload="setUp()">
-        <img id='logo' src='./assets/Mercedes_Icon_01.png'>
+	<body onload="setUp()">
+		<img id="logo" src="./assets/Mercedes_Icon_01.png" />
 		<div class="container">
-            <h1 class="title">Mercedes AMG Petronas Formula 1 Sliding Puzzle</h1>
+			<h1 class="title">Mercedes AMG Petronas Formula 1 Sliding Puzzle</h1>
 			<ul>
 				<li onclick="move('p1')"></li>
 				<li onclick="move('p2')"></li>
@@ -30,8 +35,8 @@
 				<li onclick="move('p7')"></li>
 				<li onclick="move('p8')"></li>
 				<li onclick="move('p9')"></li>
-            </ul>
-            <button id='restartBtn' onclick="restart()">Restart!</button>
+			</ul>
+			<button id="restartBtn" onclick="restart()">Restart!</button>
 		</div>
 		<script type="text/javascript" src="app.js"></script>
 	</body>

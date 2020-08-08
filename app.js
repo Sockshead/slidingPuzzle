@@ -10,7 +10,6 @@ var mon = [];
 var mix = [];
 
 function setUp() {
-	console.log("Sliding Puzzle game made in pure JS, HTML & CSS by Juan Camilo Posada - https://github.com/Sockshead \n inspired by the Formula 1 racing team Mercedes AMG Petronas");
 	// Assign id to the list items on HTML
 	for (let i = 0; i < ul.length; i++) {
 		ul[i].setAttribute("id", pos[i]);

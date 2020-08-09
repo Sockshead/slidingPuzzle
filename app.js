@@ -14,7 +14,7 @@ let cont = 0;
 function setUp() {
 	// Restarts movement counter
 	cont = 0;
-	document.getElementById("counter").innerHTML = 'Movement count: '+cont;
+	document.getElementById("counter").innerHTML = "Movement count: " + cont;
 	// Assign id to the list items on HTML
 	for (let i = 0; i < ul.length; i++) {
 		ul[i].setAttribute("id", pos[i]);
@@ -47,10 +47,11 @@ function randomize() {
 }
 
 function move(tPos) {
-	cont++;
-	document.getElementById("counter").innerHTML = 'Movement count: '+cont;
 	// Runs the function after a .5s timeout so in case the puzzle is solved it alerts the user that he solved the puzzle and won the game
 	setTimeout(checkStatus(), 500);
+	
+	cont++;
+	document.getElementById("counter").innerHTML = "Movement count: " + cont;
 
 	// Variable def of the tile that was clicked
 	var temp = document.getElementById(tPos).className;
@@ -84,7 +85,7 @@ function checkStatus() {
         if so happens, the page shows an alert to the user and disables the onnclick function of the list items in HTML
     */
 	if (arraysEqual(sol, mon)) {
-		alert("Congratulations, you solved the puzzle in: "+cont);
+		alert("Congratulations, you solved the puzzle in: " + cont + " movements");
 		for (let i = 0; i < pos.length; i++) {
 			document.getElementById(pos[i]).style.pointerEvents = "none";
 		}

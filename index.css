@@ -23,6 +23,15 @@ body {
 	width: 150px;
 	height: auto;
 }
+#counter {
+	width: 50%;
+	height: auto;
+	background: #333f47;
+	margin: 30px auto;
+	padding-top: 50px;
+	border-radius: 10px;
+	color: azure;
+}
 
 h1 {
 	font-family: "Open Sans", sans-serif;
@@ -31,7 +40,7 @@ h1 {
 }
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(2, auto);
+	grid-template-columns: repeat(3, auto);
 }
 .container {
 	width: 500px;

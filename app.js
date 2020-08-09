@@ -49,9 +49,6 @@ function randomize() {
 function move(tPos) {
 	// Runs the function after a .5s timeout so in case the puzzle is solved it alerts the user that he solved the puzzle and won the game
 	setTimeout(checkStatus(), 500);
-	
-	cont++;
-	document.getElementById("counter").innerHTML = "Movement count: " + cont;
 
 	// Variable def of the tile that was clicked
 	var temp = document.getElementById(tPos).className;
@@ -74,6 +71,8 @@ function move(tPos) {
 
 function checkStatus() {
 	// Checks the status of the game board
+	cont++;
+	document.getElementById("counter").innerHTML = "Movement count: " + cont;
 	//console.log("La solución debe ser: " + sol);
 	for (let i = 0; i < pos.length; i++) {
 		mon[i] = document.getElementById(pos[i]).className;

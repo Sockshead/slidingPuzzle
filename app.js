@@ -8,11 +8,13 @@ var cSol = [...sol];
 let pos = ["p1", "p2", "p3", "p4", "p5", "p6", "p7", "p8", "p9"];
 var mon = [];
 var mix = [];
+// Counter to keep the number of movements the player made while solving the puzzle
 let cont = 0;
 
 function setUp() {
+	// Restarts movement counter
 	cont = 0;
-	document.getElementById("counter").innerHTML = 'Movimientos: '+cont;
+	document.getElementById("counter").innerHTML = 'Movement count: '+cont;
 	// Assign id to the list items on HTML
 	for (let i = 0; i < ul.length; i++) {
 		ul[i].setAttribute("id", pos[i]);
@@ -46,7 +48,7 @@ function randomize() {
 
 function move(tPos) {
 	cont++;
-	document.getElementById("counter").innerHTML = 'Movimientos: '+cont;
+	document.getElementById("counter").innerHTML = 'Movement count: '+cont;
 	// Runs the function after a .5s timeout so in case the puzzle is solved it alerts the user that he solved the puzzle and won the game
 	setTimeout(checkStatus(), 500);
 

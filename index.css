@@ -12,10 +12,16 @@ body {
 	padding-top: 2%;
 }
 
-#logo{
-    margin: auto;
-    width: 150px;
-    height: auto;
+#logo {
+	margin: auto;
+	width: 150px;
+	height: auto;
+}
+
+#OGimg {
+	margin: auto;
+	width: 150px;
+	height: auto;
 }
 
 h1 {
@@ -23,12 +29,16 @@ h1 {
 	color: #00d2bd;
 	text-align: center;
 }
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
 .container {
 	width: 500px;
 	height: 630px;
 	background: #333f47;
-    margin: 30px auto;
-    border-radius: 10px;
+	margin: 30px auto;
+	border-radius: 10px;
 }
 ul {
 	display: flex;
@@ -48,15 +58,15 @@ ul li {
 #restartBtn {
 	margin-top: 20px;
 	width: 75px;
-    height: 30px;
-    border: 0px;
+	height: 30px;
+	border: 0px;
 	border-radius: 10px;
-    background: #a4aaae;
-    opacity: 0.7;
+	background: #a4aaae;
+	opacity: 0.7;
 }
 
-#restartBtn:hover{
-    opacity: 1;
+#restartBtn:hover {
+	opacity: 1;
 }
 
 .c1 {

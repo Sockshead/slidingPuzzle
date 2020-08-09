@@ -11,6 +11,10 @@ body {
 	flex-direction: column;
 	padding-top: 2%;
 }
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
 
 #logo {
 	margin: auto;
@@ -19,10 +23,22 @@ body {
 }
 
 #OGimg {
-	margin: auto;
-	width: 150px;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 500px;
 	height: auto;
+	bottom: 200px;
+	left: 70px;
 }
+
+#txt {
+	position: absolute;
+	color: #a4aaae;
+	top: 210px;
+	left: 210px;
+}
+
 #counter {
 	width: 50%;
 	height: auto;
@@ -38,11 +54,9 @@ h1 {
 	color: #00d2bd;
 	text-align: center;
 }
-.wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-}
 .container {
+	position: relative;
+	left: 75px;
 	width: 500px;
 	height: 630px;
 	background: #333f47;

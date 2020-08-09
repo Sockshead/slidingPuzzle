@@ -22,28 +22,28 @@
 	</head>
 
 	<body onload="setUp()">
+		<img id="logo" src="./assets/Mercedes_Icon_01.png" />
 		<div class="wrapper">
 			<div>
 				<img id="OGimg" src="./assets/f1.jpg" />
-				<p style='color: #a4aaae;'>Imagen Orginal</p>
+				<h1 id='txt'>Imagen Orginal</h1>
 			</div>
-			<img id="logo" src="./assets/Mercedes_Icon_01.png" />
+			<div class="container">
+				<h1 class="title">Mercedes AMG Petronas Formula 1 Sliding Puzzle</h1>
+				<ul>
+					<li onclick="move('p1')"></li>
+					<li onclick="move('p2')"></li>
+					<li onclick="move('p3')"></li>
+					<li onclick="move('p4')"></li>
+					<li onclick="move('p5')"></li>
+					<li onclick="move('p6')"></li>
+					<li onclick="move('p7')"></li>
+					<li onclick="move('p8')"></li>
+					<li onclick="move('p9')"></li>
+				</ul>
+				<button id="restartBtn" onclick="restart()">Restart!</button>
+			</div>
 			<div id="counter"></div>
-		</div>
-		<div class="container">
-			<h1 class="title">Mercedes AMG Petronas Formula 1 Sliding Puzzle</h1>
-			<ul>
-				<li onclick="move('p1')"></li>
-				<li onclick="move('p2')"></li>
-				<li onclick="move('p3')"></li>
-				<li onclick="move('p4')"></li>
-				<li onclick="move('p5')"></li>
-				<li onclick="move('p6')"></li>
-				<li onclick="move('p7')"></li>
-				<li onclick="move('p8')"></li>
-				<li onclick="move('p9')"></li>
-			</ul>
-			<button id="restartBtn" onclick="restart()">Restart!</button>
 		</div>
 		<script type="text/javascript" src="app.js"></script>
 	</body>

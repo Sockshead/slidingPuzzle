@@ -11,10 +11,6 @@ body {
 	flex-direction: column;
 	padding-top: 2%;
 }
-.wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, auto);
-}
 
 #logo {
 	margin: auto;
@@ -23,22 +19,10 @@ body {
 }
 
 #OGimg {
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	width: 25%;
+	margin: auto;
+	width: 150px;
 	height: auto;
-	bottom: 20%;
-	left: 7%;
 }
-
-#txt {
-	position: fixed;
-	color: #a4aaae;
-	top: 23%;
-	left: 13%;
-}
-
 #counter {
 	width: 50%;
 	height: auto;
@@ -54,9 +38,11 @@ h1 {
 	color: #00d2bd;
 	text-align: center;
 }
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+}
 .container {
-	position: relative;
-	left: 75px;
 	width: 500px;
 	height: 630px;
 	background: #333f47;

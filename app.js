@@ -82,7 +82,7 @@ function checkStatus() {
         if so happens, the page shows an alert to the user and disables the onnclick function of the list items in HTML
     */
 	if (arraysEqual(sol, mon)) {
-		alert("Congratulations, you win!");
+		alert("Congratulations, you solved the puzzle in: "+cont);
 		for (let i = 0; i < pos.length; i++) {
 			document.getElementById(pos[i]).style.pointerEvents = "none";
 		}

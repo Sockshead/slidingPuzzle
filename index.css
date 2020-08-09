@@ -23,20 +23,20 @@ body {
 }
 
 #OGimg {
-	position: absolute;
+	position: fixed;
 	margin: 0;
 	padding: 0;
-	width: 500px;
+	width: 25%;
 	height: auto;
-	bottom: 200px;
-	left: 70px;
+	bottom: 20%;
+	left: 7%;
 }
 
 #txt {
-	position: absolute;
+	position: fixed;
 	color: #a4aaae;
-	top: 210px;
-	left: 210px;
+	top: 23%;
+	left: 13%;
 }
 
 #counter {
